@@ -25,6 +25,13 @@ spec:
       serviceAccountName: {{ include "code-server.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      initContainers:
+      - name: volume-mount-hack
+        image: busybox
+        command: ["sh", "-c", "chown -R 1000:1000 /project && chmod 755 /project"]
+        volumeMounts:
+        - name: project-data
+          mountPath: /project
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
