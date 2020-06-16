@@ -3,12 +3,12 @@ entries:
   code-server:
   - apiVersion: v2
     appVersion: 3.2.0
-    created: "2020-06-14T21:02:23.811629+02:00"
+    created: "2020-06-16T22:08:47.289167+02:00"
     description: A Helm chart for Kubernetes
-    digest: 386f33032b485b5360a60f0a65b48b33c541077779e5f1927ab63ce3c35f5ebc
+    digest: a692127cd01931c8a31dc54e8b4fa052b4e945dbe55eeab846028ecfb159e58f
     name: code-server
     type: application
     urls:
-    - https://github.com/kopwei/helm-charts/releases/download/code-server-0.1.1/code-server-0.1.1.tgz
-    version: 0.1.1
-generated: "2020-06-14T21:02:23.503633+02:00"
+    - https://github.com/kopwei/helm-charts/releases/download/code-server-0.1.2/code-server-0.1.2.tgz
+    version: 0.1.2
+generated: "2020-06-16T22:08:46.968473+02:00"
